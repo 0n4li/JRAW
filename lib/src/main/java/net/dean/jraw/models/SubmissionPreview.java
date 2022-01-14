@@ -1,8 +1,11 @@
 package net.dean.jraw.models;
 
 import com.google.auto.value.AutoValue;
+import com.squareup.moshi.Json;
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
 import java.util.List;
