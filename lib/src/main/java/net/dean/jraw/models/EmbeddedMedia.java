@@ -140,12 +140,13 @@ public abstract class EmbeddedMedia implements Serializable {
         @Json(name = "hls_url")
         public abstract String getHlsUrl();
 
+        /** New Addition **/
+        @Json(name = "is_gif")
+        public abstract boolean isGif();
+
         public static JsonAdapter<RedditVideo> jsonAdapter(Moshi moshi) {
             return new AutoValue_EmbeddedMedia_RedditVideo.MoshiJsonAdapter(moshi);
         }
     }
 
-    /** New Addition **/
-    @Json(name = "is_gif")
-    public abstract boolean isGif();
 }

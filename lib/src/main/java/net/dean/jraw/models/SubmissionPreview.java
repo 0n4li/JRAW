@@ -15,8 +15,8 @@ public abstract class SubmissionPreview implements Serializable {
     public abstract List<ImageSet> getImages();
     public abstract boolean isEnabled();
 
-    public static SubmissionPreview create(List<ImageSet> newImages, boolean newEnabled) {
-        return new AutoValue_SubmissionPreview(newImages, newEnabled);
+    public static SubmissionPreview create(List<ImageSet> newImages, boolean newEnabled, EmbeddedMedia.RedditVideo newRedditVideoPreview) {
+        return new AutoValue_SubmissionPreview(newImages, newEnabled, newRedditVideoPreview);
     }
 
     public static JsonAdapter<SubmissionPreview> jsonAdapter(Moshi moshi) {
