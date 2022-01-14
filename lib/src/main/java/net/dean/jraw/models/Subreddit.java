@@ -236,4 +236,10 @@ public abstract class Subreddit implements Created, Identifiable, Referenceable<
         /** This subreddit is actually a user's profile page */
         @Json(name = "user") USER
     }
+
+    @Nullable
+    @Json(name = "icon_img") public abstract String getIconImage();
+
+    @Nullable
+    @Json(name = "community_icon") public abstract String getCommunityIcon();
 }

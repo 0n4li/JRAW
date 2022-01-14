@@ -49,4 +49,8 @@ public abstract class SubmissionPreview implements Serializable {
             return new AutoValue_SubmissionPreview_Variation.MoshiJsonAdapter(moshi);
         }
     }
+
+    /** New Addition **/
+    @Nullable @Json(name = "reddit_video_preview") public abstract EmbeddedMedia.RedditVideo getRedditVideo();
+
 }

@@ -144,4 +144,8 @@ public abstract class EmbeddedMedia implements Serializable {
             return new AutoValue_EmbeddedMedia_RedditVideo.MoshiJsonAdapter(moshi);
         }
     }
+
+    /** New Addition **/
+    @Json(name = "is_gif")
+    public abstract boolean isGif();
 }
