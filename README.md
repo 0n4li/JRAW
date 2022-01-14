@@ -9,9 +9,10 @@
 ```groovy
 repositories {
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 dependencies {
-    implementation "net.dean.jraw:JRAW:$jrawVersion"
+    implementation "com.github.0n4li:JRAW:$jrawVersion"
 }
 ```
 
