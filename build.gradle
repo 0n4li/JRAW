@@ -1,7 +1,7 @@
 import java.util.stream.Collectors
 
 buildscript {
-    ext.kotlinVersion = '1.2.41'
+    ext.kotlinVersion = '1.6.10'
     ext.spekVersion = '1.1.5'
     ext.moshiVersion = '1.6.0'
     ext.autoValueVersion = '1.5.4'
@@ -24,13 +24,16 @@ buildscript {
 
 apply plugin: 'jacoco'
 
+apply plugin: 'maven'
+group = 'com.github.0n4li'
+
 repositories {
     jcenter()
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.7'
-    distributionType = org.gradle.api.tasks.wrapper.Wrapper.DistributionType.ALL
+    distributionType = Wrapper.DistributionType.ALL
 }
 
 subprojects {
