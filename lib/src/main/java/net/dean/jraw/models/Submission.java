@@ -185,7 +185,7 @@ public abstract class Submission implements PublicContribution<SubmissionReferen
         return new AutoValue_Submission.MoshiJsonAdapter(moshi);
     }
 
-    /** New Addition **/
+    /** New Additions **/
     @Json(name = "crosspost_parent_list") @Nullable public abstract List<Submission> getCrosspostParentList();
 
 }
